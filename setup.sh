@@ -31,9 +31,9 @@ EOF
   echo
   read -r -p "[?] By default, all roles will be installed and configured. Do you want to adjust? [y/n] " ADJUST
   
-  # If they want to edit, then open the overrides file with their specified EDITOR, or nano if unspecified
+  # If they want to edit, then open the overrides file with their specified EDITOR, or vim if unspecified
   if [[ "${ADJUST}" =~ ^([yY][eE][sS]|[yY])$ ]]; then
-    "${EDITOR:-nano}" "${SCRIPT_DIR}/overrides.yml"
+    "${EDITOR:-vim}" "${SCRIPT_DIR}/overrides.yml"
     echo "[+] Updated overrides file"
   fi
 fi

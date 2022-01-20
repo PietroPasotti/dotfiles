@@ -1,11 +1,5 @@
-## jnsgruk's dotfiles/automation
-
+## pietro's dotfiles/automation, shamefully ripped off from jnsgruk's
 This repository contains both my [configs/dotfiles](./dots) and some associated Ansible [Roles](./roles) I use for setting up my machines.
-
-### TODO/Contributing
-
-- [ ] Ensure this works for Raspbian/RaspberryPi OS
-- [ ] Make code compliant with `ansible-lint` rules
 
 ### What does this do?
 

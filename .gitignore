@@ -4,3 +4,4 @@ dist/
 .python-version
 **/zsh-syntax-highlighting/
 **/zsh-autosuggestions/
+.idea

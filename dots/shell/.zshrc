@@ -11,9 +11,6 @@ fi
 # Custom zsh env
 [[ -f "${HOME}/.zsh_config/env.zsh" ]] && source ~/.zsh_config/env.zsh
 
-# Populate the SSH_AUTH_SOCK var if it isn't already.
-sysssh
-
 source $HOME/.zsh_config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.zsh_config/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(starship init zsh)"

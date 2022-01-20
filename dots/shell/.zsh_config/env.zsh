@@ -4,7 +4,7 @@ export SAVEHIST=10000
 export EDITOR=vim
 export LSCOLORS=Gxfxcxdxbxegedabagacad
 
-export DEFAULT_USER="jon"
+export DEFAULT_USER="pietro"
 export LIBVIRT_DEFAULT_URI="qemu:///system"
 
 export GDK_CORE_DEVICE_EVENTS=1
@@ -18,4 +18,4 @@ if [[ -d /var/lib/snapd ]]; then
 fi
 
 export PATH="${HOME}/bin:${HOME}/nextcloud/scripts:${PATH}"
-export PATH="$PATH:/home/jon/.local/bin"
+export PATH="$PATH:/home/pietro/.local/bin"

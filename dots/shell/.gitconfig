@@ -9,8 +9,7 @@
 [pull]
 	rebase = false
 [user]
-	email = jon@sgrs.uk
-	name = Jon Seager
-	signingkey = 83B266DCF3E3F2B41264A9F5F4A9184451BD9A74
+	email = starfire.daemon@gmail.com
+	name = Pietro Pasotti
 [commit]
-	gpgsign = true
+	gpgsign = false

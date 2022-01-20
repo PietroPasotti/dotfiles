@@ -11,16 +11,16 @@ alias gp='git push'
 alias gst='git status -sb'
 
 # Terrform Things
-alias tf='terraform'
-alias tfi='terraform init'
-alias tfp='terraform plan'
-alias tfa='terraform apply -auto-approve'
-alias tfd='terraform destroy -auto-approve'
-alias tfo='terraform output -json'
+#alias tf='terraform'
+#alias tfi='terraform init'
+#alias tfp='terraform plan'
+#alias tfa='terraform apply -auto-approve'
+#alias tfd='terraform destroy -auto-approve'
+#alias tfo='terraform output -json'
 
 # Wireguard Aliases
-alias wgu='sudo wg-quick up'
-alias wgd='sudo wg-quick down'
+#alias wgu='sudo wg-quick up'
+#alias wgd='sudo wg-quick down'
 
 # Docker Aliases
 # alias docker='sudo docker'
@@ -35,10 +35,13 @@ alias jsrw='watch -n1 --color "juju status --color --relations"'
 alias jdl='juju debug-log'
 if command -v exa >/dev/null; then
   alias ls='exa -gl --git --color=automatic'
+  alias ll="exa -lh --color=automatic"
+  alias la="exa -la --color=automatic"
 fi
 
 if command -v bat >/dev/null; then
   alias cat='bat'
 fi
 
+alias btop=bashtop
 alias k="kubectl"
