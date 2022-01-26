@@ -29,6 +29,7 @@ alias shellcheck="docker run --rm -v '$PWD:/mnt' -it koalaman/shellcheck"
 alias hadolint="docker run --rm -i hadolint/hadolint <"
 
 # Juju Aliases
+alias j="juju"
 alias js="juju status"
 alias jsw='watch -n1 --color "juju status --color"'
 alias jsrw='watch -n1 --color "juju status --color --relations"'
