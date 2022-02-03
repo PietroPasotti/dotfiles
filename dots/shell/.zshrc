@@ -14,3 +14,13 @@ fi
 source $HOME/.zsh_config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.zsh_config/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(starship init zsh)"
+
+
+path+=('/home/pietro/bin')
+export PATH
+
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export WORKON_HOME=~/.venvs
+export VIRTUALENVWRAPPER_VIRTUALENV=/home/pietro/.local/bin/virtualenv
+source ~/.local/bin/virtualenvwrapper.sh
+
