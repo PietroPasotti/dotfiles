@@ -1,24 +1,25 @@
 #!/bin/sh
 
-HEART_FULL=♥
-HEART_EMPTY=♡
-[ -z "$NUM_HEARTS" ] &&
-    NUM_HEARTS=5
+SYMBOL_FULL=😎
+SYMBOL_OK=😅
+SYMBOL_MEDIUM=😔
+SYMBOL_TIRED=😩
+SYMBOL_EMPTY=😢
 
 cutinate()
-{
-    perc=$1
-    inc=$(( 100 / $NUM_HEARTS))
-
-
-    for i in `seq $NUM_HEARTS`; do
-        if [ $perc -lt 100 ]; then
-            echo $HEART_EMPTY
-        else
-            echo $HEART_FULL
-        fi
-        perc=$(( $perc + $inc ))
-    done
+{   
+	set perc = $1
+	if [ $perc -gt 90 ]; then
+        echo $SYMBOL_FULL
+    elif [ $perc -gt 75 ]; then
+        echo $SYMBOL_OK
+    elif [ $perc -gt 50 ]; then
+        echo $SYMBOL_MEDIUM
+    elif [ $perc -gt 25 ]; then
+        echo $SYMBOL_TIRED
+    else 
+    	echo $SYMBOL_EMPTY
+    fi
 }
 
 linux_get_bat ()
@@ -44,8 +45,8 @@ case $(uname -s) in
     "Linux")
         BATPATH=/sys/class/power_supply/BAT0
         STATUS=$BATPATH/status
-        BAT_FULL=$BATPATH/energy_full
-        BAT_NOW=$BATPATH/energy_now
+        BAT_FULL=$BATPATH/charge_full
+        BAT_NOW=$BATPATH/charge_now
         if [ "$1" = `cat $STATUS` -o "$1" = "" ]; then
             linux_get_bat
         fi
@@ -108,8 +109,5 @@ esac
 BATTERY_STATUS=`battery_status $1`
 [ -z "$BATTERY_STATUS" ] && exit
 
-if [ -n "$CUTE_BATTERY_INDICATOR" ]; then
-    echo `cutinate $BATTERY_STATUS`
-else
-    echo ${BATTERY_STATUS}%
-fi
+echo `cutinate $BATTERY_STATUS`
+
