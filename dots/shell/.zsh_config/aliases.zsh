@@ -16,7 +16,7 @@ fi
 
 alias btop=bashtop
 alias reset="tput reset"
-alias neofetch "neofetch --ascii_distro Calculate"
+alias neofetch="neofetch --ascii_distro Calculate"
 
 # Git
 alias gac='git add -A  && git commit -a'
@@ -41,4 +41,5 @@ jbash ()
 {
   juju ssh $1 bash
 }
+
 
