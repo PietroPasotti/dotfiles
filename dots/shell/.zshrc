@@ -24,3 +24,7 @@ export WORKON_HOME=~/.venvs
 export VIRTUALENVWRAPPER_VIRTUALENV=/home/pietro/.local/bin/virtualenv
 source ~/.local/bin/virtualenvwrapper.sh
 
+
+autoload -Uz compinit
+zstyle ':completion:*' menu select
+fpath+=~/.zfunc

@@ -17,10 +17,10 @@ $ git clone https://github.com/jnsgruk/dotfiles
 $ ./dotfiles/setup.sh
 ```
 
-There are two alternate installation methods. The [latest release](https://github.com/jnsgruk/dotfiles/releases/latest) contains two install scripts:
+There are two alternate installation methods. The [latest release](https://github.com/PietroPasotti/dotfiles/releases/latest) contains two install scripts:
 
-- [installer.sh](https://github.com/jnsgruk/dotfiles/releases/latest/download/installer.sh) is a self-contained, self-extracting installer that when run, will extract an archive of this repository into the current working directory and then run the installer
-- [net-provision.sh](https://github.com/jnsgruk/dotfiles/releases/latest/download/net-provision.sh) will install `git`, then proceed to clone this repo into `~/dotfiles` and run the installer
+- [installer.sh](https://github.com/PietroPasotti/dotfiles/releases/latest/download/installer.sh) is a self-contained, self-extracting installer that when run, will extract an archive of this repository into the current working directory and then run the installer
+- [net-provision.sh](https://github.com/PietroPasotti/dotfiles/releases/latest/download/net-provision.sh) will install `git`, then proceed to clone this repo into `~/dotfiles` and run the installer
 
 ### What is the overrides file?
 

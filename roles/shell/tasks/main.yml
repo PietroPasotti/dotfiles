@@ -21,6 +21,7 @@
 - include_tasks: xdg-user-dirs.yml
 
 - include_tasks: install-starship.yml
+- include_tasks: install-z.yml
 
 - include_tasks: install-exa.yml
   when: install_exa

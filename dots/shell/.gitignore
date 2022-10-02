@@ -22,6 +22,8 @@
 *.maf
 *.mtc
 *.mtc1
+*.idea
+*.charm
 *.out
 *.synctex.gz
 

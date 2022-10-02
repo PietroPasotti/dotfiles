@@ -34,6 +34,7 @@ alias j="juju"
 alias js="juju status"
 alias jsw='watch -n1 --color "juju status --color"'
 alias jsrw='watch -n1 --color "juju status --color --relations"'
+alias jmw='watch -n1 --color "juju models"'
 alias jdl='juju debug-log'
 alias k="microk8s kubectl"
 

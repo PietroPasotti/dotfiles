@@ -40,3 +40,4 @@ export STARSHIP_CONFIG="$HOME/.config/starship-plain.toml"
 # source $HOME/.zsh_config/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # source $HOME/.zsh_config/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(starship init zsh)"
+
