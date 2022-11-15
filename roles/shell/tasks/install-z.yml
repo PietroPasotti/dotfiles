@@ -1,0 +1,14 @@
+---
+- name: Install z (Debian/Ubuntu)
+  become: true
+  block:
+    - name: Download z
+      get_url:
+        url: "https://raw.githubusercontent.com/rupa/z/master/z.sh"
+        dest: "{{ install_dir }}/z"
+        mode: "0755"
+        owner: "root"
+        group: "root"
+
+  when: ansible_os_family == 'Debian'
+
