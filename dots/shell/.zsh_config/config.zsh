@@ -1,4 +1,6 @@
 # ZSH Options 
+
+
 setopt promptsubst
 setopt appendhistory notify #consistent history
 unsetopt autocd #don't change directory automatically

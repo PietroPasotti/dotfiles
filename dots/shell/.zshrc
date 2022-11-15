@@ -28,3 +28,10 @@ source ~/.local/bin/virtualenvwrapper.sh
 autoload -Uz compinit
 zstyle ':completion:*' menu select
 fpath+=~/.zfunc
+
+# custom keybinds
+source ~/.zsh_config/reset-all
+# ^M  is used to represent the Enter key so that the command is run automatically.
+bindkey -s '^K' 'reset-all^M'
+
+

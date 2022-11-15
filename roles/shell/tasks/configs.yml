@@ -7,6 +7,7 @@
   loop:
     - ~/.config/htop
     - ~/.ssh
+    - ~/.tmux/plugins
 
 - name: Create config symlinks
   file:
@@ -45,6 +46,15 @@
   loop:
     - { repo: "zsh-users/zsh-autosuggestions", dest: "zsh-autosuggestions" }
     - { repo: "zsh-users/zsh-syntax-highlighting", dest: "zsh-syntax-highlighting" }
+
+
+- name: Install tpm and plugins
+  git:
+    repo: "https://github.com/{{ item.repo }}"
+    dest: "~/.tmux/plugins/{{ item.dest }}"
+  loop:
+    - { repo: "tmux-plugins/tpm", dest: "tpm" }
+
 
 - name: Change default shell
   become: yes
