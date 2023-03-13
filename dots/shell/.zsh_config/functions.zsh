@@ -11,11 +11,13 @@ jujuloggingoff(){
 setupworkenv(){
   sudo snap start juju
   sudo snap start microk8s
-  echo "started juju and microk8s snaps"
+  sudo snap start lxd
+  echo "started juju, lxd and microk8s snaps"
 }
 
 teardownworkenv(){
   sudo snap stop juju
   sudo snap stop microk8s
-  echo "stopped juju and microk8s snaps"
+  sudo snap stop lxd
+  echo "stopped juju, lxd and microk8s snaps"
 }
