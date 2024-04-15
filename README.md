@@ -13,8 +13,7 @@ This repository contains both my [configs/dotfiles](./dots) and some associated 
 Aside from simply cloning this repo and running the installer, like so:
 
 ```
-$ git clone https://github.com/pietropasotti/dotfiles
-$ ./dotfiles/setup.sh
+git clone https://github.com/pietropasotti/dotfiles; ./dotfiles/setup.sh
 ```
 
 There are two alternate installation methods. The [latest release](https://github.com/PietroPasotti/dotfiles/releases/latest) contains two install scripts:
