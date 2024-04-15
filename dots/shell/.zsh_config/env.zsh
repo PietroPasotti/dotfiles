@@ -18,4 +18,4 @@ if [[ -d /var/lib/snapd ]]; then
 fi
 
 export PATH="${HOME}/bin:${HOME}/nextcloud/scripts:${PATH}"
-export PATH="$PATH:/home/pietro/.local/bin"
+export PATH="$PATH:${HOME}/.local/bin"
