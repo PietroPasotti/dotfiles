@@ -19,11 +19,6 @@ eval "$(starship init zsh)"
 path+=('$HOME/bin')
 export PATH
 
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-export WORKON_HOME=~/.venvs
-export VIRTUALENVWRAPPER_VIRTUALENV=$HOME/.local/bin/virtualenv
-source ~/.local/bin/virtualenvwrapper.sh
-
 
 autoload -Uz compinit
 zstyle ':completion:*' menu select
@@ -61,3 +56,8 @@ compdef _gt_yargs_completions gt
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="$PATH:$(go env GOPATH)/bin"
+
+# enable default venv
+source "$HOME/venvs/pietro/bin/activate"

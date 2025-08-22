@@ -19,8 +19,10 @@ alias reset="tput reset"
 alias neofetch="neofetch --ascii_distro Calculate"
 
 # Git
+alias gcam='git commit -am'
+alias gcm='git commit -m'
 alias gac='git add -A  && git commit -a'
-alias gp='git push'
+alias gpuh='git push -u origin HEAD'
 alias gst='git status -sb'
 
 # Docker Aliases
@@ -37,6 +39,8 @@ alias jsrw='watch -n1 --color "juju status --color --relations"'
 alias jmw='watch -n1 --color "juju models"'
 alias jdl='juju debug-log'
 alias k="microk8s kubectl"
+alias spread="charmcraft.spread"
+alias unfuckmk8s='sudo microk8s refresh-certs --cert ca.crt && juju update-k8s microk8s'
 
 jbash ()
 {
